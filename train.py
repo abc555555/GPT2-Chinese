@@ -100,7 +100,7 @@ def main():
     log_step = args.log_step
     stride = args.stride
     gradient_accumulation = args.gradient_accumulation
-    fp16 = args.fp16  # 不支持半精度的显卡请勿打开
+    fp16 = False  # 不支持半精度的显卡请勿打开
     fp16_opt_level = args.fp16_opt_level
     max_grad_norm = args.max_grad_norm
     num_pieces = args.num_pieces
